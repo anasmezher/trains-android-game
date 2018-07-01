@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trains"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="Trains"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        <activity
+            android:name=".LuncherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:label="Home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+                <activity
+            android:name=".HomePage"
+            android:label="Home" >
+        </activity>
+                      <activity
+            android:name=".EasyPage"
+            android:label="Home" >
+        </activity>
+                      <activity
+            android:name=".HardPage"
+            android:label="Home" >
+        </activity>
+                      <activity
+            android:name=".MediumPage"
+            android:label="Home" >
+        </activity>
+  
+                      <activity
+            android:name=".easylevelone"
+            android:label="Home" >
+        </activity>
+                              <activity
+            android:name=".easyleveltwo"
+            android:label="Home" >
+        </activity>
+    </application>
+
+</manifest>
